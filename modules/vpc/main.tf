@@ -2,9 +2,6 @@ resource "google_compute_network" "devop_vpc" {
   name                    = var.vpc_name
   auto_create_subnetworks = false
   
-  lifecycle {
-    prevent_destroy = true
-  }
 }
 
 
@@ -13,10 +10,6 @@ resource "google_compute_subnetwork" "devop_subnet" {
   region        = var.region
   ip_cidr_range = var.ip_cidr_range
   network       = google_compute_network.devop_vpc.id
-  
-  lifecycle {
-    prevent_destroy = true
-  }
 }
 
 resource "google_compute_firewall" "ssh" {
