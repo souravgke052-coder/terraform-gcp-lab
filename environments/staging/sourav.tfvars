@@ -1,0 +1,10 @@
+project_id    = "devop-service-project"
+region        = "us-central1"
+zone          = "us-central1-a"
+vpc_name      = "staging-vpc"
+subnet_name   = "staging-subnet"
+ip_cidr_range = "10.20.0.0/24"
+vm_name       = "staging-vm-1"
+machine_type  = "e2-medium"
+image_name    = "debian-cloud/debian-11"
+

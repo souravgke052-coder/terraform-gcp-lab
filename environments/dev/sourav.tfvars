@@ -1,0 +1,10 @@
+project_id    = "devop-service-project"
+region        = "us-central1"
+zone          = "us-central1-a"
+vpc_name      = "devop-vpc"
+subnet_name   = "devop-subnet"
+ip_cidr_range = "10.10.0.0/24"
+vm_name       = "devop-vm-1"
+machine_type  = "e2-medium"
+image_name    = "debian-cloud/debian-11"
+
