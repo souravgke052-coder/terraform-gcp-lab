@@ -15,7 +15,7 @@ resource "google_compute_instance" "devop_vm_1" {
   }
 
   service_account {
-    email  = devon-sa-001@devop-service-project.iam.gserviceaccount.com
+    email  = "devon-sa-001@devop-service-project.iam.gserviceaccount.com"
     scopes = ["cloud-platform"]
   } 
 #  lifecycle {
