@@ -26,4 +26,5 @@ resource "google_compute_instance" "devop_vm_1" {
 #    ]
 #  }
   tags = ["ssh", "http-server"]
+  allow_stopping_for_update = true
 }
